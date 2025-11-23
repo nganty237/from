@@ -10,28 +10,28 @@ function Form(){
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                 <div className='relative'>
                     <label htmlFor="name">Name</label>
-                    <User className='text-gray-700  absolute top-1/2 transform:translate-y-1/2 left-1.5' />
+                    <User size={22} className='text-gray-700  absolute top-1/2 transform:translate-y-1/2 left-1.5' />
                     <input type="text" id="name" placeholder="First name" className="pl-8.5 w-full p-1.5 border border-gray-400 rounded-lg focus:outline-none" />
                 </div>
                 <div className='relative' >
                     <label htmlFor="surname">Surname</label>
-                    <User className='text-gray-700  absolute top-1/2 transform:translate-y-1/2 left-1.5' />
+                    <User size={22} className='text-gray-700  absolute top-1/2 transform:translate-y-1/2 left-1.5' />
                     <input type="text" id="surname" placeholder="Last name" className="pl-8.5 w-full p-1.5 border border-gray-400 rounded-lg focus:outline-none" />
                 </div>
             </div>
             <div className="grid grid-cols-1 relative ">
                 <label htmlFor="email">Email</label>
-                <Mail className='text-gray-700 absolute top-1/2 transform:translate-y-1/2 left-1.5' />
+                <Mail size={22} className='text-gray-700 absolute top-1/2 transform:translate-y-1/2 left-1.5' />
                 <input type="email" id="email" placeholder="you@example.com" className="pl-8.5 p-1.5 border border-gray-400 rounded-lg focus:outline-none" />
             </div>
             <div className="grid grid-cols-1 relative ">
                 <label htmlFor="password">Password</label>
-                <LockKeyhole className='text-gray-700  absolute top-1/2 transform:translate-y-1/2 left-1.5'/>
+                <LockKeyhole size={22} className='text-gray-700  absolute top-1/2 transform:translate-y-1/2 left-1.5'/>
                 <input type="password" id="password" placeholder="Enter password" className="pl-8.5 p-1.5 border border-gray-400 rounded-lg focus:outline-none"/>
             </div>
             <div className="grid grid-cols-1 relative">
                 <label htmlFor="confirmPassword">Confirm Password</label>
-                <LockKeyhole className='text-gray-700  absolute top-1/2 transform:translate-y-1/2 left-1.5' />
+                <LockKeyhole size={22} className='text-gray-700  absolute top-1/2 transform:translate-y-1/2 left-1.5' />
                 <input type="password" id="confirmPassword" placeholder="Confirm password" className="pl-8.5 p-1.5  border border-gray-400 rounded-lg focus:outline-none" />
             </div>
             <div className="grid grid-cols-1 relative">
