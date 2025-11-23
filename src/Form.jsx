@@ -1,4 +1,4 @@
-
+import { LockKeyhole, Mail, User,GraduationCap  } from 'lucide-react';
 function Form(){
   return(
     <main className="bg-white p-6 sm:p-8 rounded-xl shadow-xl w-full max-w-lg border border-gray-100">
@@ -8,30 +8,36 @@ function Form(){
         </div>
         <form action="" className="space-y-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                <div >
+                <div className='relative'>
                     <label htmlFor="name">Name</label>
-                    <input type="text" id="name" placeholder="First name" className=" w-full p-1.5 border border-gray-400 rounded-lg focus:outline-none" />
+                    <User className='text-gray-700  absolute top-1/2 transform:translate-y-1/2 left-1.5' />
+                    <input type="text" id="name" placeholder="First name" className="pl-8.5 w-full p-1.5 border border-gray-400 rounded-lg focus:outline-none" />
                 </div>
-                <div >
+                <div className='relative' >
                     <label htmlFor="surname">Surname</label>
-                    <input type="text" id="surname" placeholder="Last name" className=" w-full p-1.5 border border-gray-400 rounded-lg focus:outline-none" />
+                    <User className='text-gray-700  absolute top-1/2 transform:translate-y-1/2 left-1.5' />
+                    <input type="text" id="surname" placeholder="Last name" className="pl-8.5 w-full p-1.5 border border-gray-400 rounded-lg focus:outline-none" />
                 </div>
             </div>
-            <div className="grid grid-cols-1 ">
+            <div className="grid grid-cols-1 relative ">
                 <label htmlFor="email">Email</label>
-                <input type="email" id="email" placeholder="you@example.com" className="p-1.5 border border-gray-400 rounded-lg focus:outline-none" />
+                <Mail className='text-gray-700 absolute top-1/2 transform:translate-y-1/2 left-1.5' />
+                <input type="email" id="email" placeholder="you@example.com" className="pl-8.5 p-1.5 border border-gray-400 rounded-lg focus:outline-none" />
             </div>
-            <div className="grid grid-cols-1 ">
+            <div className="grid grid-cols-1 relative ">
                 <label htmlFor="password">Password</label>
-                <input type="password" id="password" placeholder="Enter password" className="p-1.5 border border-gray-400 rounded-lg focus:outline-none"/>
+                <LockKeyhole className='text-gray-700  absolute top-1/2 transform:translate-y-1/2 left-1.5'/>
+                <input type="password" id="password" placeholder="Enter password" className="pl-8.5 p-1.5 border border-gray-400 rounded-lg focus:outline-none"/>
             </div>
-            <div className="grid grid-cols-1 ">
+            <div className="grid grid-cols-1 relative">
                 <label htmlFor="confirmPassword">Confirm Password</label>
-                <input type="password" id="confirmPassword" placeholder="Confirm password" className="p-1.5 border border-gray-400 rounded-lg focus:outline-none" />
+                <LockKeyhole className='text-gray-700  absolute top-1/2 transform:translate-y-1/2 left-1.5' />
+                <input type="password" id="confirmPassword" placeholder="Confirm password" className="pl-8.5 p-1.5  border border-gray-400 rounded-lg focus:outline-none" />
             </div>
-            <div className="grid grid-cols-1 ">
+            <div className="grid grid-cols-1 relative">
                 <label htmlFor="statut">Statut</label>
-                <input type="text" id="statut" placeholder="Student, Professional" className="p-1.5 border border-gray-400 rounded-lg focus:outline-none" />
+                <GraduationCap className='text-gray-700 absolute top-1/2 transform:translate-y-1/2 left-1.5' />
+                <input type="text" id="statut" placeholder="Student, Professional" className="pl-8.5 p-1.5 border border-gray-400 rounded-lg focus:outline-none" />
             </div>
             <div className="flex space-x-1">
                 <input type="checkbox" id="action"  />
@@ -43,3 +49,4 @@ function Form(){
   )
 }
 export default Form;
+
